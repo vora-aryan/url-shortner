@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+      td {
+        padding: 4px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>log in page</h1>
+    <form action="/user/login" method="post">
+      <table border="1">
+        <tbody>
+          <tr>
+            <td><label for="">email</label></td>
+            <td><input type="text" name="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="">password</label></td>
+            <td><input type="text" name="password" /></td>
+          </tr>
+          <tr align="center">
+            <td colspan="2">
+              <button type="submit">log in</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <p><%= locals.error %></p>
+  </body>
+</html>
